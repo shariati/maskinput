@@ -1,6 +1,6 @@
 {
 	"name": "maskinput",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Masks the input strings",
 	"license": "MIT",
 	"keywords": [
@@ -30,7 +30,7 @@
 	},
 	"dependencies": {
 		"ansi-regex": "^2.0.0",
-    "taketalk": "^1.0.0",
+		"taketalk": "^1.0.0",
 		"ansi-styles": "^2.0.0"
 	},
 	"devDependencies": {
