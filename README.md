@@ -1,4 +1,4 @@
-# maskinput
+# maskinput [![npm version](https://badge.fury.io/js/maskinput.svg)](https://badge.fury.io/js/maskinput)[![Build Status](https://travis-ci.org/shariati/maskinput.svg?branch=master)](https://travis-ci.org/shariati/maskinput)[![Coverage Status](https://coveralls.io/repos/github/shariati/maskinput/badge.svg?branch=master)](https://coveralls.io/github/shariati/maskinput?branch=master)
 Masks the input strings
 
 ![](screenshot.png)
