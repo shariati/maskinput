@@ -1,0 +1,43 @@
+{
+	"name": "maskinput",
+	"version": "1.0.0",
+	"description": "Masks the input strings",
+	"license": "MIT",
+	"keywords": [
+		"ansi",
+		"app",
+		"masked",
+		"input",
+		"text",
+		"cli",
+		"cli-app",
+		"string",
+		"message"
+	],
+	"homepage": "https://github.com/shariati/maskinput",
+	"author": "Amin Shariati",
+	"repository": "shariati/maskinput",
+	"bin": "cli.js",
+	"files": [
+		"index.js",
+		"cli.js"
+	],
+	"engines": {
+		"node": ">=0.10.0"
+	},
+	"scripts": {
+		"test": "xo && mocha"
+	},
+	"dependencies": {
+		"ansi-regex": "^2.0.0",
+    "taketalk": "^1.0.0",
+		"ansi-styles": "^2.0.0"
+	},
+	"devDependencies": {
+		"mocha": "*",
+		"xo": "*"
+	},
+	"xo": {
+		"space": true
+	}
+}
