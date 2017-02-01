@@ -30,7 +30,7 @@
 	},
 	"dependencies": {
 		"ansi-regex": "^2.0.0",
-    "taketalk": "^1.0.0",
+		"taketalk": "^1.0.0",
 		"ansi-styles": "^2.0.0"
 	},
 	"devDependencies": {
