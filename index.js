@@ -4,13 +4,13 @@ module.exports = function (inputString, options) {
   inputString = (inputString || '112233445566778899').trim();
   options = options || {};
 
-  var MASKED_CHARACTER = '#';
-  var TOTAL_UNMASKED_TRAILING_CHARACTERS = 0;
-  var TOTAL_UNMASKED_LEADING_CHARACTERS = 0;
+  let MASKED_CHARACTER = '#';
+  let TOTAL_UNMASKED_TRAILING_CHARACTERS = 0;
+  let TOTAL_UNMASKED_LEADING_CHARACTERS = 0;
 
-  var maskedCharacter = MASKED_CHARACTER;
-  var totalUnmaskedTrailingCharacters = TOTAL_UNMASKED_TRAILING_CHARACTERS;
-  var totalUnmaskedLeadingCharacters = TOTAL_UNMASKED_LEADING_CHARACTERS;
+  let maskedCharacter = MASKED_CHARACTER;
+  let totalUnmaskedTrailingCharacters = TOTAL_UNMASKED_TRAILING_CHARACTERS;
+  let totalUnmaskedLeadingCharacters = TOTAL_UNMASKED_LEADING_CHARACTERS;
 
   if (options.maskedCharacter) {
     maskedCharacter = options.maskedCharacter;
@@ -30,14 +30,14 @@ module.exports = function (inputString, options) {
     TOTAL_UNMASKED_LEADING_CHARACTERS = totalUnmaskedLeadingCharacters;
   }
 
-  var totalLenght = inputString.length;
-  var maskedLength;
-  var maskedBuffer = '';
+  let totalLenght = inputString.length;
+  let maskedLength;
+  let maskedBuffer = '';
 
   maskedBuffer = maskedBuffer.concat(inputString.substring(0, TOTAL_UNMASKED_LEADING_CHARACTERS));
   if (totalLenght > TOTAL_UNMASKED_TRAILING_CHARACTERS + TOTAL_UNMASKED_LEADING_CHARACTERS) {
     maskedLength = totalLenght - (TOTAL_UNMASKED_TRAILING_CHARACTERS + TOTAL_UNMASKED_LEADING_CHARACTERS);
-    for (var i = 0; i < maskedLength; i++) {
+    for (let i = 0; i < maskedLength; i++) {
       maskedBuffer += MASKED_CHARACTER;
     }
   } else {
@@ -46,6 +46,5 @@ module.exports = function (inputString, options) {
   }
 
   maskedBuffer = maskedBuffer.concat(inputString.substring(TOTAL_UNMASKED_LEADING_CHARACTERS + maskedLength, totalLenght));
-  var masked = maskedBuffer.toString();
-  return masked;
+  return maskedBuffer.toString();
 };
