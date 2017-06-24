@@ -1,5 +1,5 @@
 'use strict';
-var maskinput = require('../');
+const maskinput = require('../');
 
 console.log(maskinput('john.doe@space.com'));
 console.log(maskinput('john.doe@space.com', {
@@ -49,4 +49,3 @@ console.log(maskinput('john.doe@space.com', {
 }));
 console.log(maskinput('123'));
 console.log(maskinput('145534534533'));
-

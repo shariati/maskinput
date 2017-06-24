@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 'use strict';
-var pkg = require('./package.json');
-var maskinput = require('./');
+const pkg = require('./package.json');
+const maskinput = require('./');
 
 require('taketalk')({
-  init: function (input, options) {
+  init(input, options) {
     console.log(maskinput(input, options));
   },
-  help: function () {
+  help() {
     console.log([
       '',
       '  ' + pkg.description,
