@@ -1,6 +1,6 @@
 {
 	"name": "maskinput",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Masks the input strings",
 	"license": "MIT",
 	"keywords": [
@@ -29,9 +29,7 @@
 		"test": "xo && mocha"
 	},
 	"dependencies": {
-		"ansi-regex": "^3.0.0",
-		"taketalk": "^1.0.0",
-		"ansi-styles": "^3.2.0"
+		"taketalk": "^1.0.0"
 	},
 	"devDependencies": {
 		"mocha": "^3.4.0",
